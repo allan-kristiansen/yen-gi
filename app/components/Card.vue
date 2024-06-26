@@ -42,6 +42,11 @@ defineProps<{ post: Post }>()
   margin-top: 3rem;
   margin-bottom: 10rem;
 
+  @media only screen and (min-width: 768px) {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
   &:first-child {
     justify-content: center;
     .image {

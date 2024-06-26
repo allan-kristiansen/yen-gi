@@ -37,22 +37,26 @@ useHead({
   --burgundy-dark: #4F2525;
   --burgundy-light: #692F30;
 
+  --fs-sm: 12px;
+  --fs-md: 1.613vw;
+  --fs-lg: 1.111vw;
+  --fs-xl: 0.926vw;
+
   @media only screen and (max-width: 500px) {
-    font-size: 12px;
+    font-size: var(--fs-sm);
   }
 
   @media only screen and (min-width: 500px) {
-    font-size: 1.613vw;
+    font-size: var(--fs-md);
   }
 
   @media only screen and (min-width: 768px) {
-    font-size: 1.111vw;
+    font-size: var(--fs-lg);
   }
 
   @media only screen and (min-width: 1440px) {
-    font-size: 0.926vw;
+    font-size: var(--fs-xl);
   }
-
 }
 
 html {
@@ -65,7 +69,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.723rem;
+  font-size: 1.72281rem;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
