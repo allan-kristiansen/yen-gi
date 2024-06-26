@@ -2,18 +2,6 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/sanity',
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-          'IBM Plex Mono': [500, 700],
-          Inter: [500, 700, 800],
-          'PT Serif': [400, 700],
-          download: true,
-          inject: true,
-        },
-      },
-    ],
   ],
   sanity: {
     projectId: process.env.NUXT_SANITY_PROJECT_ID,
@@ -32,4 +20,10 @@ export default defineNuxtConfig({
       'postcss-nested': {},
     },
   },
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
+  }
 })
