@@ -6,7 +6,5 @@ const { data: posts } = await useSanityQuery<Post[]>(query)
 </script>
 
 <template>
-  <section>
-    <Card v-for="post in posts || []" :key="post._id" :post="post" />
-  </section>
+  <Section v-for="post in posts || []" :key="post._id" :post="post" />
 </template>

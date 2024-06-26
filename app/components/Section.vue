@@ -5,12 +5,12 @@ defineProps<{ post: Post }>()
 </script>
 
 <template>
-  <div class="card">
+  <section class="section">
     <img
       v-if="post.mainImage"
       class="image"
       :src="urlFor(post.mainImage).url()"
-      alt="Cover image"
+      alt=""
     />
     
     <div class="links">
@@ -25,13 +25,12 @@ defineProps<{ post: Post }>()
         </NuxtLink>
       </div>
     </div>
-
-  </div>
+  </section>
 </template>
 
 <style scoped>
 
-.card {
+.section {
   width: 100%;
   height: 100svh;
   display: flex;
@@ -64,11 +63,15 @@ defineProps<{ post: Post }>()
   }
 
   .links {
-    width: 100%;
+    width: 30rem;
     max-width: 50%;
     display: flex;
     justify-content: center;
     margin-top: 7.875rem;
+
+    @media only screen and (max-width: 767px) {
+      width: 25rem;
+    }
 
     .link-item {
       position: relative;

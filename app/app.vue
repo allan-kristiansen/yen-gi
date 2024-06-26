@@ -11,11 +11,16 @@
   <div class="container">
     <main>
       <NuxtPage />
+      <div class="wrapper-for-infinity-scroll">
+        <NuxtPage />
+      </div>
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useSmoothScroll } from './composables/useSmoothScroll';
+
 const route = useRoute()
 const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 
@@ -24,6 +29,10 @@ useHead({
   meta: [
     { name: 'description', content: '' }
   ]
+})
+
+onMounted(() => {
+  useSmoothScroll()
 })
 
 </script>
@@ -59,6 +68,15 @@ useHead({
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 html {
   background-color: var(--white);
   font-family: var(--font-family);
@@ -68,6 +86,7 @@ html {
 }
 
 body {
+  overscroll-behavior: none;
   margin: 0;
   font-size: 1.72281rem;
 
@@ -96,6 +115,12 @@ img {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper-for-infinity-scroll {
+  height: 100svh;
+  overflow: hidden;
 }
 
 
