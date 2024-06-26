@@ -17,9 +17,6 @@ importers:
 
   app:
     dependencies:
-      '@nuxtjs/google-fonts':
-        specifier: ^3.0.0
-        version: 3.2.0
       '@nuxtjs/sanity':
         specifier: ^1.10.1
         version: 1.11.0
@@ -2793,17 +2790,6 @@ packages:
       - vti
       - vue-tsc
     dev: true
-
-  /@nuxtjs/google-fonts@3.2.0:
-    resolution: {integrity: sha512-cGAjDJoeQ2jm6VJCo4AtSmKO6KjsbO9RSLj8q261fD0lMVNMZCxkCxBkg8L0/2Vfgp+5QBHWVXL71p1tiybJFw==}
-    dependencies:
-      '@nuxt/kit': 3.11.1
-      google-fonts-helper: 3.5.0
-      pathe: 1.1.2
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: false
 
   /@nuxtjs/sanity@1.11.0:
     resolution: {integrity: sha512-FyTAOsVafE/Pg3ZiuAc8mWYDWxREUmyAMGJ43T4ph8fLDWqiwG2PfDigTL+te8mKFPhLy/3xbMI0QAasoOkBcg==}
@@ -6012,6 +5998,7 @@ packages:
   /deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
+    dev: true
 
   /default-browser-id@5.0.0:
     resolution: {integrity: sha512-A6p/pu/6fyBcA1TRz/GqWYPViplrftcW2gZC9q79ngNCKAeR/X3gcEdXQHl4KNXV+3wgIJ1CPkJQ3IHM6lcsyA==}
@@ -7378,15 +7365,6 @@ packages:
 
   /golden-fleece@1.0.9:
     resolution: {integrity: sha512-YSwLaGMOgSBx9roJlNLL12c+FRiw7VECphinc6mGucphc/ZxTHgdEz6gmJqH6NOzYEd/yr64hwjom5pZ+tJVpg==}
-    dev: false
-
-  /google-fonts-helper@3.5.0:
-    resolution: {integrity: sha512-QcKvB3Y+jJFpvBUp/iG1oe9BbKirrjwU2mzJzKGGb5czz6T93CCP9A8IlfCoZnko7b1+gPH3yVghXP5EBvunDg==}
-    dependencies:
-      deepmerge: 4.3.1
-      hookable: 5.5.3
-      ofetch: 1.3.4
-      ufo: 1.5.3
     dev: false
 
   /gopd@1.0.1:
