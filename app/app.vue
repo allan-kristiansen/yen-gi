@@ -94,8 +94,4 @@ main {
   justify-content: center;
 }
 
-@media (min-width: 575px) {
-  
-}
-
 </style>

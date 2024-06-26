@@ -82,10 +82,4 @@ defineProps<{ post: Post }>()
   }
 
 }
-
-@media (min-width: 575px) {
-}
-
-@media (min-width: 800px) {
-}
 </style>
