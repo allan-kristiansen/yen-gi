@@ -37,7 +37,7 @@ useHead({
   --burgundy-dark: #4F2525;
   --burgundy-light: #692F30;
 
-  --fs-sm: 12px;
+  --fs-sm: 10px;
   --fs-md: 1.613vw;
   --fs-lg: 1.111vw;
   --fs-xl: 0.926vw;

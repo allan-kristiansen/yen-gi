@@ -51,6 +51,10 @@ defineProps<{ post: Post }>()
     justify-content: center;
     .image {
       width: 15.40744rem;
+
+      @media only screen and (max-width: 500px) {
+        width: 20rem;
+      }
     }
   }
 
