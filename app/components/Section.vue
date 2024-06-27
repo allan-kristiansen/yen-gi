@@ -10,7 +10,7 @@ defineProps<{ post: Post }>()
       v-if="post.mainImage"
       class="image"
       :src="urlFor(post.mainImage).url()"
-      alt=""
+      :alt="post.altText"
     />
     
     <div class="links">
@@ -20,8 +20,8 @@ defineProps<{ post: Post }>()
             v-if="link.outline"
             class="outline"
             :src="urlFor(link.outline).url()"
-          />
-          {{ link.linkText }}
+            alt="Outline illustration">
+            {{ link.linkText }}
         </NuxtLink>
       </div>
     </div>

@@ -33,6 +33,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'altText',
+      title: 'Alt text for image',
+      type: 'string'
+    }),
+    defineField({
       title: 'Links',
       name: 'links',
       type: 'array',
