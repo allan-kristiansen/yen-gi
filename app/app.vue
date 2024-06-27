@@ -89,6 +89,7 @@ body {
   overscroll-behavior: none;
   margin: 0;
   font-size: 1.72281rem;
+  letter-spacing: -0.03em;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
