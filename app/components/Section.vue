@@ -73,6 +73,7 @@ defineProps<{ post: Post }>()
   .section-info {
     font-size: 1.72281rem;
     letter-spacing: -0.03em;
+    line-height: 100%;
     text-transform: uppercase;
 
     .section-info-item {
@@ -115,7 +116,8 @@ defineProps<{ post: Post }>()
 
       .contact-item {
         width: 17.5rem;
-        text-align: center; 
+        text-align: center;
+        line-height: 110%;
       }
     }
 
