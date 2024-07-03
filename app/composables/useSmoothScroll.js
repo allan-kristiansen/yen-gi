@@ -9,7 +9,7 @@ export const useSmoothScroll = () => {
         smoothWheel: true,
         infinite: true,
         syncTouch: true,
-        syncTouchLerp: 0.075,
+        // syncTouchLerp: 0.075,
     })
 
     gsap.ticker.add((time) => {
