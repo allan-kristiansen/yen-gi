@@ -124,4 +124,10 @@ main {
   overflow: hidden;
 }
 
+@media (pointer:coarse) {
+  .wrapper-for-infinity-scroll {
+    display: none;
+  }
+}
+
 </style>
