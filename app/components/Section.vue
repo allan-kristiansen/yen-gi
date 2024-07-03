@@ -71,7 +71,7 @@ defineProps<{ post: Post }>()
   }
 
   .section-info {
-    font-size: 1.72281rem;
+    font-size: 1.5rem;
     letter-spacing: -0.03em;
     line-height: 100%;
     text-transform: uppercase;

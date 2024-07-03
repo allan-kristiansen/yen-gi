@@ -87,7 +87,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.72281rem;
+  font-size: 1.5rem;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
