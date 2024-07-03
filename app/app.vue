@@ -63,13 +63,15 @@ html {
   background-color: var(--white);
   font-family: var(--font-family);
   font-weight: 500;
-  color: var(--burgundy-dark);
+  color: var(--burgundy-light);
   text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   font-size: 1.72281rem;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -80,7 +82,7 @@ body {
 }
 
 a {
-  color: var(--burgundy-dark);
+  color: var(--burgundy-light);
   text-decoration: none;
   text-transform: uppercase;
 }

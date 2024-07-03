@@ -33,6 +33,29 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'sectionInfo',
+      title: 'Section info',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [
+            { title: 'Normal', value: 'normal' },
+          ],
+          lists: [],
+          marks: {
+            decorators: [],
+            annotations: [],
+          },
+        }
+      ],
+    }),
+    defineField({
+      name: 'altText',
+      title: 'Alt text for image',
+      type: 'string'
+    }),
+    defineField({
       title: 'Links',
       name: 'links',
       type: 'array',
@@ -44,13 +67,15 @@ export default defineType({
               title: 'Link text',
               name: 'linkText',
               type: 'text',
-              rows: 1,
-              validation: rule => rule.required().max(20)
+              rows: 1
             },
             {
               title: 'URL',
               name: 'href',
               type: 'url',
+              validation: Rule => Rule.uri({
+                scheme: ['http', 'https', 'mailto', 'tel']
+              })
             },
             {
               name: 'outline',
@@ -62,13 +87,45 @@ export default defineType({
             select: {
               title: 'linkText',
               subtitle: 'href',
+            }
+          },
+        },
+      ],
+    }),
+    defineField({
+      title: 'Contact info',
+      name: 'contact',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              title: 'Contact text left',
+              name: 'TextLeft',
+              type: 'text',
+              rows: 1
             },
-            prepare({ title, subtitle }) {
-              return {
-                title,
-                subtitle: new URL(subtitle).hostname,
-              };
+            {
+              title: 'Contact text right',
+              name: 'TextRight',
+              type: 'text',
+              rows: 1
             },
+            {
+              title: 'URL',
+              name: 'href',
+              type: 'url',
+              validation: Rule => Rule.uri({
+                scheme: ['http', 'https', 'mailto', 'tel']
+              })
+            }
+          ],
+          preview: {
+            select: {
+              title: 'TextLeft',
+              subtitle: 'href',
+            }
           },
         },
       ],
