@@ -8,6 +8,8 @@ export const useSmoothScroll = () => {
         gestureOrientation: 'vertical',
         smoothWheel: true,
         infinite: true,
+        syncTouch: true,
+        syncTouchLerp: 0.075,
     })
 
     gsap.ticker.add((time) => {
