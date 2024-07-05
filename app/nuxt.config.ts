@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     visualEditing: {
       studioUrl: process.env.NUXT_SANITY_STUDIO_URL || 'https://yen-gi.sanity.studio',
       token: process.env.NUXT_SANITY_API_READ_TOKEN,
-      stega: false,
+      stega: true,
     },
   },
   postcss: {
