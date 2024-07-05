@@ -33,7 +33,7 @@ export default defineConfig({
     }),
     presentationTool({
       previewUrl: {
-        origin: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
+        origin: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://yen-gi.com',
         previewMode: {
           enable: '/preview/enable',
           disable: '/preview/disable',
